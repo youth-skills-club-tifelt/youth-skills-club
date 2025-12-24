@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  direction: rtl;
+  background-color: #f4f6fb;
+  color: #333;
+}
+
+/* الواجهة */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content img {
+  width: 320px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  color: #4a00e0;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: #555;
+}
+
+/* البطاقات */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* الأنشطة */
+.activities {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.activities h2 {
+  font-size: 36px;
+  color: #4a00e0;
+  margin-bottom: 40px;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.activity {
+  background: #f4f6fb;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.activity:hover {
+  transform: translateY(-8px);
+}
+
+.future {
+  border: 2px dashed #ff9800;
+}
+
+/* إظهار / إخفاء */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  animation: fadeSlide 0.6s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* التواصل */
+.contact {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.whatsapp { background: #25D366; }
+.instagram { background: #E1306C; }
+.facebook { background: #1877f2; }
+.tiktok { background: #000; }
+
+/* الفوتر */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

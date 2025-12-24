@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Youth Skills Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الواجهة -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="hero.png" alt="Youth Skills Club">
+      <h1>مرحبا بكم في نادي الشباب</h1>
+      <p>نصنع المستقبل معًا 🌟</p>
+    </div>
+  </section>
+
+  <!-- البطاقات -->
+  <section class="cards">
+    <div class="card" onclick="toggleActivities()">
+      <h3>🎯 أنشطتنا</h3>
+      <p>ورش، رياضة، برمجة، فنون</p>
+    </div>
+
+    <div class="card">
+      <h3>👥 فريقنا</h3>
+      <p>شباب طموح ومدربون داعمون</p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 أهدافنا</h3>
+      <p>بناء جيل مبدع وقائد</p>
+    </div>
+  </section>
+
+  <!-- الأنشطة -->
+  <section id="activities" class="activities hidden">
+    <h2>🎯 أنشطتنا</h2>
+
+    <div class="activities-grid">
+      <div class="activity">
+        <h3>⚽ الرياضة</h3>
+        <p>كرة القدم، ألعاب جماعية</p>
+      </div>
+
+      <div class="activity">
+        <h3>💻 البرمجة</h3>
+        <p>أساسيات البرمجة والتكنولوجيا</p>
+      </div>
+
+      <div class="activity">
+        <h3>🎨 الفنون</h3>
+        <p>رسم، أشغال يدوية، إبداع</p>
+      </div>
+
+      <div class="activity future">
+        <h3>🤖 أنشطة مستقبلية</h3>
+        <p>روبوتيك، ذكاء اصطناعي</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- التواصل -->
+  <section class="contact">
+    <h2>📞 تواصل معنا</h2>
+    <p>انضم إلى Youth Skills Club وتابع أنشطتنا</p>
+
+    <div class="contact-buttons">
+      <a href="https://chat.whatsapp.com/HUTrJSaWY0Y0aWy1JtEtkZ" target="_blank" class="btn whatsapp">
+        💬 مجموعة واتساب
+      </a>
+
+      <a href="https://www.instagram.com/youth__skills_club" target="_blank" class="btn instagram">
+        📷 إنستغرام
+      </a>
+
+      <a href="https://www.facebook.com/share/1ARdd5CGUV/?mibextid=wwXIfr" target="_blank" class="btn facebook">
+        📘 فيسبوك
+      </a>
+
+      <a href="https://www.tiktok.com/@youth_skills_club" target="_blank" class="btn tiktok">
+        🎵 تيك توك
+      </a>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2025 Youth Skills Club - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleActivities() {
+      const section = document.getElementById("activities");
+      section.classList.toggle("hidden");
+      section.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
